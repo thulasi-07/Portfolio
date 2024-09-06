@@ -32,13 +32,66 @@
                     <img src="">
                 </div>
                 <div class="about-col-2">
-                    <h1>About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum, modi porro veritatis, explicabo ab assumenda similique ut commodi quaerat facilis laboriosam aperiam nemo minus corrupti magnam omnis officiis beatae.</p>
+                  <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div> 
+
+                  <div class="tab-contains active-tab" id=""skills>
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                    </ul>
+                  </div> 
+
+                  <div class="tab-contains" id="experience">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                    </ul>
+                  </div> 
+
+                  <div class="tab-contains" id="ducation">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                        <li><span>UI?UX</span><br>Designing Web/App Interface</li>
+                    </ul>
+                  </div> 
                 </div>
             </div>
 
         </div>
     </div>
-    
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tablinks = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("avtive-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
 
